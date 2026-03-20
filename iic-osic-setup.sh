@@ -220,7 +220,7 @@ make -j"$(nproc)" && sudo make install
 if [ ! -d  "$SRC_DIR/ngspice-$NGSPICE_VERSION" ]; then
 	echo ">>>> Installing ngspice-$NGSPICE_VERSION"
 	cd "$SRC_DIR" || exit
-	wget https://sourceforge.net/projects/ngspice/files/ng-spice-rework/$NGSPICE_VERSION/ngspice-$NGSPICE_VERSION.tar.gz
+	wget https://sourceforge.net/projects/ngspice/files/ng-spice-rework/old-releases/$NGSPICE_VERSION/ngspice-$NGSPICE_VERSION.tar.gz
 	gunzip ngspice-$NGSPICE_VERSION.tar.gz
 	tar xf ngspice-$NGSPICE_VERSION.tar
 	rm ngspice-$NGSPICE_VERSION.tar
